@@ -1,5 +1,6 @@
 import mesop as me
 import mesop.labs as mel
+from mesop.server import server
 
 from Llm import llm, prompt_template
 
@@ -18,3 +19,7 @@ def transform(input: str, history: list[mel.ChatMessage]):
     yield response
 
 
+'''
+if __name__ == '__main__':
+    server.run()
+'''
