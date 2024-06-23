@@ -7,10 +7,10 @@ from Llm import llm, prompt_template
 
 @me.page(
     path="/chat",
-    title="Talk to Knowledge",
+    title="Wizardry Whisperer",
 )
 def page():
-    mel.chat(transform, title="Talk to Knowledge", bot_user="Bot without memory")
+    mel.chat(transform, title="Wizardry Whisperer", bot_user="The Wizard")
 
 
 def transform(input: str, history: list[mel.ChatMessage]):
